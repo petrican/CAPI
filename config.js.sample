@@ -1,0 +1,6 @@
+module.exports = {
+
+        'secret': 'somesecret',
+	'database': 'mongodb://localhost/mymongodb',
+        'randomPassword' : 'somerandomPass'
+};
