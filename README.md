@@ -25,6 +25,13 @@ Then start the serv using
 
 $nodemon
 
+At this step the endpoints should be available at http://localhost:3000/
+To test this access http://localhost:3000/api in your browser.
+
+You should have this JSON repose:
+{"message":"Welcome to Core APIs for your APP!","server":"Your Server"}
+
+
 Happy codding!
 
 
