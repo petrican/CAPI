@@ -35,7 +35,7 @@ You should have this JSON repose:
 {"message":"Welcome to Core APIs for your APP!","server":"Your Server"}
 
 
-Happy codding!
+Happy coding!
 
 
 
