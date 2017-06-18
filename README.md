@@ -7,8 +7,11 @@ Step 1: Clone the repo locally
 $git clone https://github.com/petrican/CAPI
 
 Step 2: Create a config file from the sample given
+
 $cd CAPI
+
 $cat config.js.sample > config.js
+
 
 Step 3: Edit the config to match your mongoDB connection
 
