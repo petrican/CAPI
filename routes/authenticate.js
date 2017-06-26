@@ -6,12 +6,19 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var User = require('../models/User.js');
 
+// Conn to redis as we store in there the token
+var redis = require('redis');
+var client = redis.createClient(); //creates a new client
+
+
 // route to authenticate a user (POST http://localhost:3000/api/authenticate)
 router.post('/', function (req, res) {
 
+  console.log('To Authenticate: '  + req.body.username);
+
   // find the user
   User.findOne({
-    name: req.body.name
+    'username': req.body.username
   }, function (err, user) {
 
     if (err) throw err;
@@ -32,6 +39,12 @@ router.post('/', function (req, res) {
           var token = jwt.sign(user, config.secret, {
             expiresIn: 86400 // expires in 24 hours
           });
+
+          console.log('Writting to Redis');
+          console.log('Key ->' + user.username);
+          console.log('Token ->' + token);
+
+          client.set(token, user.username);
 
           // return the information including token as JSON
           res.json({

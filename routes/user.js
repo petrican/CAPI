@@ -55,7 +55,7 @@ router.get('/name/:name', function (req, res, next) {
 			//res.json(user);
 		}
 	});
-});  // end user listing by ID
+});  // end user listing by Name
 
 
 /* POST user info    api/user/:name  - USED TO UPDATE user data */
