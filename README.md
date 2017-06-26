@@ -13,7 +13,7 @@ $cd CAPI
 $cat config.js.sample > config.js
 
 
-Step 3: Edit the config to match your mongoDB connection
+Step 3: Edit the config to match your mongoDB connection. Also make sure you have Redis installed on your box.
 
 Step 4: Start the server
 
