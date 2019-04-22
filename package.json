@@ -15,7 +15,7 @@
     "jsonwebtoken": "^5.7.0",
     "mongodb": "^2.1.7",
     "mongoose": "^4.4.5",
-    "morgan": "~1.7.0",
+    "morgan": ">=1.9.1",
     "redis": "^2.6.5",
     "serve-favicon": "~2.3.0"
   }
